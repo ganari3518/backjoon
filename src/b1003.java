@@ -29,16 +29,14 @@ public class b1003 {
             int tmp;
             tmp = Integer.parseInt(br.readLine());
             if(0 > tmp || tmp > 40) {
-                if(j == 0)
-                    j = 0;
                 j--;
                 continue;
             }
             n[j] = tmp;
         }
 
-        for(int j = 0; j < n.length; j++){
-            fibonacci(n[j]);
+        for (int k : n) {
+            fibonacci(k);
             System.out.println(cnt0 + " " + cnt1);
             cnt0 = cnt1 = 0;
         }
