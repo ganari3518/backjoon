@@ -24,7 +24,7 @@ public class b2845 {
             if(val[i] == s)
                 System.out.print("0" + " ");
             else
-                System.out.print((val[i]-s) + " ");
+                System.out.print((val[i] - s) + " ");
         }
     }
 }
